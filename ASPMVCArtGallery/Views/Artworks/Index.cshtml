@@ -9,7 +9,7 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+<table class="table table-responsive">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Name)
@@ -30,7 +30,7 @@
         </td>
         <td>
             @*@Html.DisplayFor(modelItem => item.ImgUrl)*@
-            <img src="@Url.Content(item.ImgUrl)" width="700" />
+            <img src="@Url.Content(item.ImgUrl)" class="img-responsive img-rounded" />
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Price)
